@@ -13,10 +13,3 @@ export function taskNext() {
 
   return combination;
 }
-
-export default {
-  taskFirst,
-  getLast,
-  taskNext,
-};
-
