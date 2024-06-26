@@ -14,7 +14,8 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    // Add your custom rules here
+    // Add your ESLint rules here
+    'no-console': 'off', // Example: Disable no-console rule
   },
 };
 
