@@ -1,27 +1,26 @@
 export default class Airport {
-	constructor(name, code) {
-		this._name = name
-		this._code = code
-	}
+  constructor(name, code) {
+    this._name = name;
+    this._code = code;
+  }
 
-	get name() {
-		return this._name;
-	}
+  get name() {
+    return this._name;
+  }
 
-	set name(newName) {
-		this._name = newName
-	}
+  set name(value) {
+    this._name = value;
+  }
 
-	get code() {
-		 return this._code;
-	}
+  get code() {
+    return this._code;
+  }
 
-	set code(newCode) {
-		this._code = newCode;
+  set code(value) {
+    this._code = value;
+  }
 
-	}
-
-	 toString() {
-		 return `[object ${this.code}]`;
-	 }
+  toString() {
+    return `[object ${this.code}]`;
+  }
 }
