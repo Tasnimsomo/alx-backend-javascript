@@ -1,5 +1,3 @@
-import Currency from './3-currency.js'
-
 export default class Pricing {
 	constructor (amount, currency) {
 		this._amount = amount;
@@ -31,13 +29,10 @@ export default class Pricing {
 	}
 
 	displayFullPrice() {
-		 return ` ${this._currency.name}  ${this._amount} (${this._currency.code})`;
+		return `${this.amount} ${this.currency._name} (${this.currency._code})`;
     }
 
 	static covertPrice(amount, conversionRate) {
-		if (typeof amount !== 'number' || typeof conversionRate !== 'number') {
-			throw new TypeError('Both amount and conversionRate must be numbers');
-			}
 		return amount * conversionRate;
 	}
 }
