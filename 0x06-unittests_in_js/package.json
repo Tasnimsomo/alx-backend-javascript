@@ -13,6 +13,7 @@
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.3",
     "@babel/register": "^7.24.6",
+    "chai": "^4.2.0",
     "mocha": "^9.2.2"
   }
 }
